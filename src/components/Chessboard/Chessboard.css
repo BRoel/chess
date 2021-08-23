@@ -1,0 +1,19 @@
+#chessboard {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(8, 75px);
+    background-color: red;
+    border: darkgrey 2px solid;
+    border-style: ridge;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
