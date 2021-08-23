@@ -5,16 +5,12 @@
     height: 75px;
 }
 
-.tile-black {
-    background-color: black;
-}
-
-.tile-white {
-    background-color: white;
-}
-
-.tile img {
-    width: 80px;
+.tile .chess-piece {
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
     -webkit-filter: drop-shadow(1px 1px 0 white)
     drop-shadow(-1px 1px 0 white)
     drop-shadow(1px -1px 0 white)
@@ -24,4 +20,20 @@
     drop-shadow(-1px 1px 0 white)
     drop-shadow(1px -1px 0 white)
     drop-shadow(-1px -1px 0 white);
+}
+
+.tile .chess-piece:hover {
+    cursor: grab;
+}
+
+.tile .chess-piece:active {
+    cursor: grabbing;
+}
+
+.tile-black {
+    background-color: black;
+}
+
+.tile-white {
+    background-color: white;
 }

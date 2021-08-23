@@ -9,14 +9,14 @@ export default function Tile({ number, image }: Props) {
     if (number % 2 === 0) {
         return (
             <div className='tile tile-black'>
-                <img src={image} />
+                {image && <div style={{backgroundImage: `url(${image})`}} className='chess-piece'></div>}
             </div>
         );
     } else {
         return (
             <div className='tile tile-white'>
                 {' '}
-                <img src={image} />
+                {image && <div style={{backgroundImage: `url(${image})`}} className='chess-piece'></div>}
             </div>
         );
     }
