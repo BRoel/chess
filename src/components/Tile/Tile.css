@@ -1,4 +1,6 @@
 .tile {
+    display: grid;
+    place-content: center;
     width: 75px;
     height: 75px;
 }
@@ -9,4 +11,17 @@
 
 .tile-white {
     background-color: white;
+}
+
+.tile img {
+    width: 80px;
+    -webkit-filter: drop-shadow(1px 1px 0 white)
+    drop-shadow(-1px 1px 0 white)
+    drop-shadow(1px -1px 0 white)
+    drop-shadow(-1px -1px 0 white);
+
+    filter: drop-shadow(1px 1px 0 white)
+    drop-shadow(-1px 1px 0 white)
+    drop-shadow(1px -1px 0 white)
+    drop-shadow(-1px -1px 0 white);
 }
